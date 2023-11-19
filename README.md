@@ -62,21 +62,21 @@ State managment
 @DoubletappAssignmentTokenBot с помощью команды /generate_server_token
 
 ## Использованные библиотеки
-  hive_flutter: ^1.1.0
-  dio - для связи с сервером
-  connectivity_plus - для проверки соединения
-  flutter_bloc - для стейт менеджмента
-  get_it - для инъекции зависимостей
-  auto_route - для генерации путей
-  shimmer - для скелета списка привычек 
-  fluttertoast - для отображения красивых встроенных уведомлений
-  talker_flutter - для логирования и удобства отладки
-  talker_dio_logger - для логирования запросов
-  talker_bloc_logger - для логирования изменений состояния
-  flutter_colorpicker - для выбора цвета привычки
-  mockito - для имитации зависимостей в тестах
-  hive_generator - для генерации моделей Hive
-  auto_route_generator - для генерации путей
+  hive_flutter: ^1.1.0  
+  dio - для связи с сервером  
+  connectivity_plus - для проверки соединения  
+  flutter_bloc - для стейт менеджмента  
+  get_it - для инъекции зависимостей  
+  auto_route - для генерации путей  
+  shimmer - для скелета списка привычек   
+  fluttertoast - для отображения красивых встроенных уведомлений  
+  talker_flutter - для логирования и удобства отладки  
+  talker_dio_logger - для логирования запросов  
+  talker_bloc_logger - для логирования изменений состояния  
+  flutter_colorpicker - для выбора цвета привычки  
+  mockito - для имитации зависимостей в тестах  
+  hive_generator - для генерации моделей Hive  
+  auto_route_generator - для генерации путей  
   
 ## Проблемы реализации
   Не хватило времени для изучения применения mockito в тестах при ограничениях поддержки null-safety в новых версиях Flutter.
