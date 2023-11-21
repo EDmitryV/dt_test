@@ -33,13 +33,13 @@ class HabitListTile extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Row(
+              Wrap(
+                alignment: WrapAlignment.spaceBetween,
                 children: [
                   Text(habit.title,
                       style: Theme.of(context).textTheme.headlineMedium),
-                  const Spacer(),
                   FilledButton.tonalIcon(
                       label: const Text("Выполнить"),
                       onPressed: () {
@@ -57,13 +57,13 @@ class HabitListTile extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              Row(
+              Wrap(
+                alignment: WrapAlignment.spaceBetween,
                 children: [
                   Text(
                     "Приоритет: ${habit.priority.displayRuName}",
                     style: Theme.of(context).textTheme.labelLarge,
                   ),
-                  const Spacer(),
                   Text(
                     "${habit.type.displayRuName} привычка",
                     style: Theme.of(context).textTheme.labelLarge!.copyWith(
@@ -74,8 +74,8 @@ class HabitListTile extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+              Wrap(
+                alignment: WrapAlignment.center,
                 children: [
                   Text(
                     "Частота: ${habit.count} раз за ${habit.frequency} дней",
@@ -97,6 +97,8 @@ class HabitListTile extends StatelessWidget {
                         childrenPadding: const EdgeInsets.all(10),
                         title: Text(
                           'Описание',
+                          maxLines: 50,
+                          overflow: TextOverflow.clip,
                           style: Theme.of(context).textTheme.labelLarge,
                         ),
                         children: [
