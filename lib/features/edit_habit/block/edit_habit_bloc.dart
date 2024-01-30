@@ -95,6 +95,7 @@ class EditHabitBloc extends Bloc<EditHabitEvent, EditHabitState> {
           emit);
       if ([
         state.titleErrorMessage,
+        state.descriptionErrorMessage,
         state.countErrorMessage,
         state.frequencyErrorMessage
       ].where((e) => e.isNotEmpty).isNotEmpty) {
