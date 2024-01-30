@@ -81,5 +81,5 @@ State managment
 ## Проблемы реализации
   Не хватило времени для изучения применения mockito в тестах при ограничениях поддержки null-safety в новых версиях Flutter.
 ## Установка
-  Android debug apk: https://drive.google.com/file/d/1MFX-4nM0h4YyW62oFuFCLgKh4ZAJgleQ/view?usp=drive_link
+  Android debug apk: https://drive.google.com/file/d/1MFX-4nM0h4YyW62oFuFCLgKh4ZAJgleQ/view?usp=drive_link <br />
   Android release apk: https://drive.google.com/file/d/1k4cBi8gFplCIlyhawxgxVeDXrOk3AGQH/view?usp=drive_link
